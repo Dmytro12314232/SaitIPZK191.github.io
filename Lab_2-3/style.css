@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1435px;
+    height: 2500px;
+    background: url("img/bg.jpg") no-repeat;
+    background-size: 1437px auto;
+}
+
+/* Header */
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .container .logo {
+    width: 180px;
+    height: 50px;
+    font-size: 83px;
+    font-family: "MrsEavesItalic";
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.678);
+    line-height: 0.278;
+    text-align: justify;
+    -moz-transform: matrix( 1.43428117092525,0,0,1.43428117092525,0,0);
+    -webkit-transform: matrix( 1.43428117092525,0,0,1.43428117092525,0,0);
+    -ms-transform: matrix( 1.43428117092525,0,0,1.43428117092525,0,0);
+    margin: 105px 290px;
+}
+
+header .container .top-menu {
+    width: 500px;
+    height: 30px;
+    margin: 50px 0px;
+}
+
+header .container .top-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 23px;
+    font-family: "SegoeWPN";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+header .container .banner .icon {
+    position: relative;
+    width: 350px;
+    margin: -50px 300px;
+    z-index: 3;
+}
+
+header .container .banner .banner-text p {
+    font-family: "SegoeWPN";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    height: 112px;
+}
+
+header .container .banner .banner-text p:nth-child(1){
+    font-size: 65px;
+    left: 700px;
+    top: 245px;
+    width: 337px;
+}
+
+header .container .banner .banner-text p:nth-child(2){
+    font-size: 44px;
+    font-weight: normal;
+    left: 700px;
+    top: 320px;
+    width: 450px;
+}
+
+header .container .banner .banner-text button {
+    animation: bounce 1s;
+    font-size: 23px;
+    font-family: "SegoeWPN";
+    color: white;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 128, 0, 0.5);
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    width: 142px;
+    height: 42px;
+}
+
+
+header .container .banner .banner-text button:hover {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+header .container .banner .but {
+    position: relative;
+    left: 700px;
+    top: -100px;
+    z-index: 4;
+    width: 142px;
+    height: 42px;
+}
+
+header .container .banner .but:hover {
+    background-color: #175c3b;
+}
+
+header .container .banner .arrows .arrow-left {
+    position: absolute;
+    left: 100px;
+    top: 279px;
+    width: 50px;
+    height: 50px;
+    z-index: 116;
+}
+
+header .container .banner .arrows .arrow-right {
+    position: absolute;
+    left: 1230px;
+    top: 279px;
+    width: 50px;
+    height: 50px;
+    z-index: 117;
+}
+
+/* Main */
+
+main .container {
+    background-color: white;
+    position: relative;
+    top: -150px;
+    left: 0;
+    width: 1435px;
+    height: 1000px;
+}
+
+main .container .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 200px 15px 200px;
+    font-size: 27px;
+    font-family: "SegoeWPN";
+    color: rgb(92, 91, 91);
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+main .container .tabs .col {
+    margin-top: 100px;
+    margin-right: 50px;
+    width: 200px;
+    z-index: 5;
+}
+
+main .container .ipad {
+    /*display: none;*/
+    /*
+    position: absolute;
+    left: 200px;
+    top: 230px;
+    bottom: 0;
+    right: 0;
+    */
+    position: absolute;
+    left: 200px;
+    background: white;
+    /*margin: 5px 0;*/
+    width: 1000px;
+    height: 850px;
+    z-index: 4;
+    /*border: 1px grey solid;*/
+}
+
+main .container .ipad-1 {
+    /*left: 200px;
+    margin-left: -260px;*/
+    /*background-color: #e1fcff;*/
+}
+
+main .container .ipad img {
+    margin-top: 50px;
+}
+
+main .container .col:hover{
+    border: 1px grey solid;
+    border-bottom: none;
+}
+
+main .container .ipad-2, .ipad-3, .ipad-4 {
+    display: none;
+}
+
+main .container .col:hover .ipad {
+    border: 1px grey solid;
+    z-index: 1;
+}
+
+main .container .col .col-2,
+main .container .col .col-3,
+main .container .col .col-4 {
+    display: none;
+}
+
+main .container .col:hover .ipad{
+    display: block;
+}
+
+main .container .tabs div .sub_title{
+    width: 200px;
+}
+
+main .container h2 {
+    font-size: 40px;
+    font-family: "SegoeWPN";
+    color: rgb(79, 79, 79);
+    line-height: 1.2;
+    text-align: left;
+}
+
+main .container .ipad h2 {
+    margin: 20px 100px;
+}
+
+main .container p {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(129, 129, 129);
+    line-height: 1.714;
+    text-align: left;
+}
+
+main .container .ipad p {
+    margin-left: 50px;
+    /*width: 896px;*/
+    /*height: 229px;*/
+}
+
+main .container .tabs .block {
+    margin-top: 20px;
+}
+/*
+
+main .container .tabs:hover .block {
+    margin-top: 900px;
+}
+*/
+
+main .container .tabs .block {
+    margin-top: 900px;
+}
+
+main .container .block .screenshot img {
+    margin-left: -700px;
+    /*
+    position: absolute;
+    left: 250px;
+    top: 1300px;
+    */
+}
+
+main .container .describe {
+    margin-top: -300px;
+    margin-left: 550px;
+    width: 650px;
+    /*
+    position: absolute;
+    left: 750px;
+    top: 1350px;
+    */
+}
+
+main .container .describe h2 {
+    text-align: left;
+}
+
+main .container .describe p:before {
+    content: url("img/mark.png");
+}
+
+/* Footer */
+
+footer .container {
+    position: relative;
+    left: 0px;
+    top: 600px;
+    width: 1310px;
+    height: 200px;
+    background-color: #2c2726;
+    padding: 50px 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+footer .container .col {
+    width: 350px;
+}
+
+footer .container .col h3 {
+    font-size: 22px;
+    font-family: "SegoeWP";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: left;
+    align-items: center;
+}
+
+footer .container .col p,
+footer .container .col a,
+footer .container .col li {
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.692;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer .container .col ~ p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer .container .logo {
+    font-size: 83px;
+    font-family: "MrsEavesItalic";
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.678);
+    line-height: 0.278;
+    text-align: justify;
+    -moz-transform: matrix( 1.43428117092525,0,0,1.43428117092525,0,0);
+    -webkit-transform: matrix( 1.43428117092525,0,0,1.43428117092525,0,0);
+    -ms-transform: matrix( 1.43428117092525,0,0,1.43428117092525,0,0);
+    position: absolute;
+    right: 100px;
+    top: 120px;
+}
+
+footer .cr {
+    font-size: 14px;
+    font-family: "Arial";
+    color: white;
+    line-height: 1.692;
+    text-align: left;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    z-index: 18;
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 512px){
+
+}
